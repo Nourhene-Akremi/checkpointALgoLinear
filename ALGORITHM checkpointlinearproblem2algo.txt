@@ -1,0 +1,29 @@
+ALGORITHM checkpointlinearproblem2
+VAR
+set1:array_of INTEGER[4];
+set2:array_of INTEGER[5];
+i,j:INTEGER;
+test:BOOLEAN;
+sum:INTEGER:=0;
+max:=set1
+BEGIN
+set1={3,1,7,9};
+set2={2,4,1,9,3};
+IF (max(set1[0],set2[0])<min(set1[set1.length]),(set2[set2.length])) THEN
+END_IF
+FOR i FROM 0 TO set1.length-1
+test:=false;
+WHILE (j<set2.length) DO
+IF (set1[i]=set2[j]) THEN
+test:=true;
+END_IF
+j:=j+1;
+END_WHILE
+IF (test=false) THEN
+sum=sum+set[i]+set2[j];
+read("the sum of distinctelemet is",sum);
+END_IF
+END_FOR
+END_IF
+write(sum);
+END
